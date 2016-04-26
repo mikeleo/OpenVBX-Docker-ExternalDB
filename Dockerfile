@@ -27,6 +27,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Download OpenVBX into /var/www/site
 RUN rm -fr /var/www/site && mkdir /var/www/site && \
 wget https://api.github.com/repos/twilio/OpenVBX/zipball/1.2.20 && \
+
 unzip 1.2.20 -d /tmp  && \
 cp -a /tmp/twilio*/. /var/www/site && \
 rm -rf /tmp/twilio*

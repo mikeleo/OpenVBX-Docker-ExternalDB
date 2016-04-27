@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:wily
 
 RUN apt-get update
 RUN apt-get -y upgrade
